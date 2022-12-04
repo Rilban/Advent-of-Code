@@ -1,10 +1,10 @@
 input_file = File.open("dag_04_input.txt")
-file_data = input_file.readlines.map(&:chomp)
+input = input_file.readlines.map(&:chomp)
 
 
 overlapping_pairs = 0
 
-for n in file_data
+for n in input
     first_range = n.split(",")[0]
     second_range = n.split(",")[1]
 

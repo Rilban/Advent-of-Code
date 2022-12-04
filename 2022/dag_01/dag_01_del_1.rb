@@ -1,10 +1,10 @@
 input_file = File.open("dag_01_input.txt")
-file_data = input_file.readlines.map(&:chomp)
+input = input_file.readlines.map(&:chomp)
 
 calories_summed = []
 index = 0
 
-for n in file_data
+for n in input
     if n == ""
         index += 1
     elsif calories_summed[index] == nil

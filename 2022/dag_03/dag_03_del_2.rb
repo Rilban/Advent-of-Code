@@ -1,5 +1,5 @@
 input_file = File.open("dag_03_input.txt")
-file_data = input_file.readlines.map(&:chomp)
+input = input_file.readlines.map(&:chomp)
 
 sorted_by_group = []
 i = 0
@@ -7,8 +7,8 @@ group = 0
 priorities = "0abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 sum = 0
 
-while i < file_data.length
-    sorted_by_group[group] = [file_data[i], file_data[i+1],file_data[i+2]]
+while i < input.length
+    sorted_by_group[group] = [input[i], input[i+1],input[i+2]]
     group += 1
     i += 3
 end

@@ -1,5 +1,5 @@
 input_file = File.open("dag_02_input.txt")
-file_data = input_file.readlines.map(&:chomp)
+input = input_file.readlines.map(&:chomp)
 
 rock = 1
 paper = 2
@@ -15,7 +15,7 @@ index = 0
 # A for Rock, B for Paper, and C for Scissors
 # 1 for Rock, 2 for Paper, and 3 for Scissors
 
-for n in file_data
+for n in input
 
     if n[0] == "A"
 
