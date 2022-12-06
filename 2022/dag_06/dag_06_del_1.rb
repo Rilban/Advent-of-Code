@@ -14,7 +14,6 @@ while i < input.length
         else
             marker_found = true
         end
-        
     }
     
     if marker_found
