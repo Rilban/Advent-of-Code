@@ -1,5 +1,5 @@
 def antal_fiskar(fiskar,antal_dagar)
-    fiskar_antal_dagar =[0, 0, 0, 0, 0, 0, 0 ,0 ,0]
+    fiskar_antal_dagar = [0, 0, 0, 0, 0, 0, 0, 0 ,0]
     counter = 0
 
     for n in fiskar
